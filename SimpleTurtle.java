@@ -698,6 +698,13 @@ public class SimpleTurtle
     this.yPos = y;
   }
 
+  public void turtleData(String shape){
+    System.out.println("[" + this.getName() + "]");
+    System.out.println("\tColor: " + this.getInfoColor());
+    System.out.println("\tShape: " + shape);
+    System.out.println("\tDistance From Top Left: " + this.getDistance(0, 0));
+  }
+
   public void circle(int size){
     this.polygon(30, size);
   }
@@ -723,7 +730,6 @@ public class SimpleTurtle
     this.xPos += 10;
     this.setPenColor(Color.BLACK);
     this.rectangle(40,20);
-    //this.telport(1000,1000);
   }
 
   public void tree(){
@@ -762,7 +768,6 @@ public class SimpleTurtle
     this.xPos -= 10;
     this.yPos += 15;
     this.rectangle(1, 10);
-    this.telport(100, 100);
   }
   
   /**

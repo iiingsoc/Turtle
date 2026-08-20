@@ -12,6 +12,16 @@ public class Main {
     Turtle yertle3 = new Turtle(500,200, world);
     Turtle yertle4 = new Turtle(200,200, world);
 
+    yertle.setName("Yertle");
+    yertle2.setName("Yertle2");
+    yertle3.setName("Yertle3");
+    yertle4.setName("Yertle4");
+
+    yertle.setColor(Color.RED);
+    yertle2.setColor(Color.ORANGE);
+    yertle3.setColor(Color.YELLOW);
+    yertle4.setColor(Color.GREEN);
+
     // // Add your code here
     yertle.tree();
     yertle2.circle(10);
@@ -19,6 +29,12 @@ public class Main {
     yertle4.snowMan();
     yertle4.telport(500, 500);
     yertle4.snowMan();
+
+    yertle.turtleData("Tree");
+    yertle2.turtleData("Circle");
+    yertle3.turtleData("House");
+    yertle4.turtleData("Snowman");
+
 
 
     // //world.setVisible(true);
